@@ -1,137 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<title>Jenson T.C. Lau</title>
-
-<style>
-
-body{
-font-family: Arial, Helvetica, sans-serif;
-max-width: 900px;
-margin:auto;
-padding:40px;
-line-height:1.6;
-color:#333;
-}
-
-h1{
-font-size:42px;
-margin-bottom:5px;
-}
-
-h2{
-margin-top:40px;
-border-bottom:2px solid #eee;
-padding-bottom:5px;
-}
-
-.subtitle{
-font-size:18px;
-color:#555;
-margin-bottom:25px;
-}
-
-.section{
-margin-bottom:30px;
-}
-
-.project{
-margin-bottom:20px;
-}
-
-.footer{
-margin-top:60px;
-font-size:14px;
-color:#777;
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jenson T.C. Lau</title>
+  <style>
+    :root { --text:#1f2937; --muted:#6b7280; --border:#e5e7eb; --bg:#ffffff; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:var(--bg); color:var(--text); }
+    .container { max-width: 980px; margin: 0 auto; padding: 28px 20px; }
+    nav { border-bottom:1px solid var(--border); }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { font-weight:700; letter-spacing:0.2px; }
+    .nav-links a { margin-left:14px; text-decoration:none; color:var(--text); font-size:14px; }
+    .nav-links a:hover { text-decoration:underline; }
+    .hero { display:flex; gap:26px; align-items:flex-start; padding:32px 0; }
+    .photo { width:140px; height:140px; border-radius:18px; object-fit:cover; border:1px solid var(--border); }
+    h1 { font-size:38px; margin:0 0 6px 0; }
+    .subtitle { color:var(--muted); margin:0 0 14px 0; }
+    .buttons a { display:inline-block; margin-right:10px; margin-top:10px;
+      padding:10px 12px; border:1px solid var(--border); border-radius:10px;
+      text-decoration:none; color:var(--text); font-size:14px;
+    }
+    .buttons a:hover { background:#f9fafb; }
+    .grid { display:grid; grid-template-columns: 1.2fr 0.8fr; gap:26px; }
+    .card { border:1px solid var(--border); border-radius:14px; padding:18px; }
+    h2 { font-size:18px; margin:0 0 10px 0; }
+    .item { margin:0 0 12px 0; }
+    .muted { color:var(--muted); }
+    footer { margin-top:34px; padding-top:18px; border-top:1px solid var(--border); color:var(--muted); font-size:13px; }
+    @media (max-width: 820px){
+      .hero { flex-direction:column; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-
 <body>
 
-<h1>Jenson T.C. Lau</h1>
+  <nav>
+    <div class="container nav-inner">
+      <div class="brand">Jenson T.C. Lau</div>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/cv.html">CV</a>
+      </div>
+    </div>
+  </nav>
 
-<p class="subtitle">
-Quantitative Research | Psychometrics | Survey & Experimental Design
-</p>
+  <main class="container">
 
-<p>
-PhD researcher at the University of Washington specializing in quantitative
-research methods, survey methodology, and experimental design. I use
-statistical modeling and behavioral science to help organizations make
-data-driven decisions.
-</p>
+    <section class="hero">
+      <img class="photo" src="assets/profile.jpg" alt="Jenson Lau headshot" />
+      <div>
+        <h1>Jenson T.C. Lau</h1>
+        <p class="subtitle">Quantitative Research · Psychometrics · Survey & Experimental Design</p>
 
+        <p class="item">
+          PhD researcher at the University of Washington focusing on quantitative methods, survey methodology, and
+          experimental design. I build rigorous, decision-ready evidence using statistical modeling and behavioral science.
+        </p>
 
-<h2>Skills</h2>
+        <div class="buttons">
+          <a href="assets/Jenson_Lau_CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+          <a href="https://www.linkedin.com/in/jenson-lau" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="mailto:Jenson91@uw.edu">Email</a>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+          Open to industry roles: People Analytics · UX/Behavioral Research · Applied Research
+        </p>
+      </div>
+    </section>
 
-<ul>
-<li>Statistical modeling (SEM, mediation/moderation)</li>
-<li>Survey design & experimental research</li>
-<li>Monte Carlo simulation</li>
-<li>Data analysis in R</li>
-<li>Qualtrics survey programming</li>
-</ul>
+    <section class="grid">
 
+      <div class="card">
+        <h2>Selected Work</h2>
+        <p class="item"><b>Power Analysis & Research Design</b><br><span class="muted">Monte Carlo simulation, survey studies (N&gt;500), design tradeoffs</span></p>
+        <p class="item"><b>Workforce & Immigration Research</b><br><span class="muted">Visa delays, retention, motivation, career progression</span></p>
+        <p class="item"><b>Cannabis & Leadership Experiments</b><br><span class="muted">Leadership communication, charisma, decision-making</span></p>
+        <p class="item"><b>Leadership & Sustainability (CSR/ESG)</b><br><span class="muted">Waste reduction, operational efficiency, leadership practices</span></p>
 
-<h2>Selected Projects</h2>
+        <p class="item"><a href="/projects.html">→ See full projects</a></p>
+      </div>
 
-<div class="project">
-<b>Power Analysis & Research Design</b><br>
-Designed large-scale survey studies (N>500) and simulation frameworks to
-evaluate statistical power and research design decisions.
-</div>
+      <div class="card">
+        <h2>Quick Facts</h2>
+        <p class="item"><b>Methods</b><br><span class="muted">SEM, mediation/moderation, survey methods, experimental design</span></p>
+        <p class="item"><b>Tools</b><br><span class="muted">R, Qualtrics, ggplot</span></p>
+        <p class="item"><b>Education</b><br><span class="muted">PhD (Expected 2026), University of Washington</span></p>
 
-<div class="project">
-<b>Workforce & Immigration Research</b><br>
-Led a qualitative research project examining employment-based immigration
-experiences and the effects of visa delays on motivation and career
-progression.
-</div>
+        <h2 style="margin-top:18px;">Research</h2>
+        <p class="item muted">
+          Add 3–6 publications here (title + venue + year) once you’re ready.
+        </p>
+      </div>
 
-<div class="project">
-<b>Cannabis & Leadership Experiments</b><br>
-Designed experimental studies examining how cannabis use influences
-leadership communication and charisma.
-</div>
+    </section>
 
-<div class="project">
-<b>Leadership & Sustainability Research</b><br>
-Studied leadership practices influencing waste reduction and operational
-efficiency in a large food manufacturing organization.
-</div>
+    <footer>
+      Hosted on GitHub Pages · Last updated: <span id="date"></span>
+    </footer>
 
+  </main>
 
-<h2>Education</h2>
-
-<b>University of Washington</b><br>
-PhD Organizational Behavior (Expected 2026)
-
-<br><br>
-
-<b>Temple University</b><br>
-MS Business Research
-
-<br><br>
-
-<b>Georgia Institute of Technology</b><br>
-BS Electrical Engineering
-
-
-<h2>Contact</h2>
-
-Email: Jenson91@uw.edu <br>
-LinkedIn: www.linkedin.com/in/jenson-lau
-
-
-<div class="footer">
-
-Website hosted on GitHub Pages
-
-</div>
+<script>
+  document.getElementById("date").textContent = new Date().toLocaleDateString();
+</script>
 
 </body>
 </html>
