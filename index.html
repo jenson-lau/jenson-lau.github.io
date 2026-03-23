@@ -205,6 +205,18 @@
         font-size:32px;
       }
     }
+    .edu-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:18px;
+}
+
+.logo{
+  width:40px;
+  height:40px;
+  object-fit:contain;
+}
   </style>
 </head>
 <body>
@@ -226,7 +238,7 @@
       <img src="assets/profile.jpg" alt="Jenson Lau profile photo" class="photo" />
       <div>
         <h1>Jenson T.C. Lau</h1>
-        <p class="subtitle">Quantitative Research · Psychometrics · Survey & Experimental Design</p>
+        <p class="subtitle">Organizational Behavior · Psychometrics · Survey & Experimental Design</p>
         <p class="intro">
           PhD researcher at the University of Washington specializing in quantitative methods,
           behavioral research, and decision-focused analysis. My work spans survey methodology,
@@ -351,20 +363,33 @@ In addition, I am a certified medical interpreter (Cantonese–English, NBCMI), 
 
     <section class="section" id="education">
       <h2>Education</h2>
-      <div class="card">
-        <div class="item">
-          <div class="role">University of Washington</div>
-          <div class="meta">PhD, Organizational Behavior|Psychometrics & Applied Analytics · Expected June 2026</div>
-        </div>
-        <div class="item">
-          <div class="role">Temple University</div>
-          <div class="meta">MS, Business Research</div>
-        </div>
-        <div class="item">
-          <div class="role">Georgia Institute of Technology</div>
-          <div class="meta">BS, Electrical Engineering</div>
-        </div>
-      </div>
+<div class="card">
+
+  <div class="edu-item">
+    <img src="assets/uw.png" class="logo">
+    <div>
+      <b>University of Washington</b><br>
+      PhD, Organizational Behavior | Psychometrics & Applied Analytics · Expected June 2026
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <img src="assets/temple.png" class="logo">
+    <div>
+      <b>Temple University</b><br>
+      MS, Business Research
+    </div>
+  </div>
+
+  <div class="edu-item">
+    <img src="assets/gatech.jpg" class="logo">
+    <div>
+      <b>Georgia Institute of Technology</b><br>
+      BS, Electrical Engineering
+    </div>
+  </div>
+
+</div>
     </section>
 
     <section class="section" id="contact">
