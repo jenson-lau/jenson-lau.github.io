@@ -16,6 +16,35 @@
       --max:980px;
     }
 
+    .edu-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:18px;
+  padding:10px;
+  border-radius:10px;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect */
+.edu-item:hover{
+  background:#f9fafb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.logo{
+  width:40px;
+  height:40px;
+  object-fit:contain;
+  transition: transform 0.25s ease;
+}
+
+/* Logo slightly enlarges */
+.edu-item:hover .logo{
+  transform: scale(1.05);
+}
+
     *{box-sizing:border-box}
 
     body{
